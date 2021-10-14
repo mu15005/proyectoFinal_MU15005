@@ -4,6 +4,7 @@
         <script src="public/assets/js/metisMenu.min.js"></script>
         <script src="public/assets/js/jquery.slimscroll.js"></script>
         <script src="public/assets/js/waves.min.js"></script>
+        <script src="public/plugins/bootstrap-filestyle/js/bootstrap-filestyle.min.js"></script>
          <!-- countdown -->
          <script src="public/plugins/countdown/jquery.countdown.min.js"></script>
         <script src="public/assets/pages/countdown.int.js"></script>

@@ -18,48 +18,54 @@
                     </h3>
 
                     <div class="p-3">
-                        <h4 class="font-18 m-b-5 text-center">Welcome Back !</h4>
-                        <p class="text-muted text-center">Sign in to continue to Admiria.</p>
+                        <h4 class="font-18 m-b-5 text-center">Bienvenido</h4>
+                        <p class="text-muted text-center">Ingrese sus credenciales</p>
 
-                        <form class="form-horizontal m-t-30" action="index.php">
+                        <form class="form-horizontal m-t-30" action="index.php" id="formulario_login">
 
                             <div class="form-group">
-                                <label for="username">Username</label>
-                                <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                <label for="correo">Correo</label>
+                                <input autocomplete="off" type="text" name="correo" class="form-control" id="correo" placeholder="Ingrese su correo">
                             </div>
 
                             <div class="form-group">
-                                <label for="userpassword">Password</label>
-                                <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                <label for="userpassword">Contraseña</label>
+                                <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Ingrese su contraseña">
                             </div>
 
                             <div class="form-group row m-t-20">
                                 <div class="col-sm-6">
-                                    <div class="custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="customControlInline">
-                                        <label class="custom-control-label" for="customControlInline">Remember me</label>
-                                    </div>
+                                    
                                 </div>
                                 <div class="col-sm-6 text-right">
-                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Log In</button>
+                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Ingresar</button>
                                 </div>
                             </div>
 
-                            <div class="form-group m-t-10 mb-0 row">
+                           <div class="row">
+                               <div class="col-md-7">
+                               <div class="form-group">
                                 <div class="col-12 m-t-20">
-                                    <a href="pages-recoverpw.php" class="text-muted"><i class="mdi mdi-lock"></i> Forgot your password?</a>
+                                    <a href="pages-recoverpw.php" class="text-muted"><i class="mdi mdi-lock"></i> Recuperar contraseña</a>
                                 </div>
                             </div>
+                          
+                               </div>
+                               <div class="col-md-5">
+                               <div class="form-group">
+                                <div class="col-12 m-t-20">
+                                    <a href="#" id="link_registrar" class="text-muted"><i class="mdi mdi-account"></i> Registrarse</a>
+                                </div>
+                            </div>
+                               </div>
+                           </div>
                         </form>
                     </div>
 
                 </div>
             </div>
 
-            <div class="m-t-40 text-center">
-                <p class="text-white">Don't have an account ? <a href="pages-register.php" class="font-500 font-14 text-white font-secondary"> Signup Now </a> </p>
-                <p class="text-white">© <?php echo date("Y",strtotime("-1 year")); ?> - <?php echo date("Y"); ?>  Admiria. Crafted with <i class="mdi mdi-heart text-danger"></i> by Themesbrand</p>
-            </div>
+             
 
         </div>
 
@@ -67,6 +73,7 @@
 
         <!-- App js -->
         <script src="../../public/assets/js/app.js"></script>
+        <script src="funciones_ingreso.js" type="text/javascript" charset="utf-8" ></script>
 
     </body>
 </html>
