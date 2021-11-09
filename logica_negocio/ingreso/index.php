@@ -2,78 +2,89 @@
 
 <?php include '../../layouts/headerStyle.php'; ?>
 
-    <body class="fixed-left">
+<body class="fixed-left">
 
-        <?php include '../../layouts/loader.php'; ?>
+    <?php include '../../layouts/loader.php'; ?>
 
-        <!-- Begin page -->
-        <div class="accountbg"></div>
-        <div class="wrapper-page">
+    <!-- Begin page -->
+    <div class="accountbg"></div>
+    <div class="wrapper-page">
 
-            <div class="card">
-                <div class="card-body">
+        <div class="card">
+            <div class="card-body">
 
-                    <h3 class="text-center m-0">
-                        <a href="index.php" class="logo logo-admin"><img src="../../public/assets/images/logo.png" height="30" alt="logo"></a>
-                    </h3>
+                <h3 class="text-center m-0">
+                    <a href="index.php" class="logo logo-admin"><img src="../../public/assets/images/logo.png" height="30" alt="logo"></a>
+                </h3>
 
-                    <div class="p-3">
-                        <h4 class="font-18 m-b-5 text-center">Bienvenido</h4>
-                        <p class="text-muted text-center">Ingrese sus credenciales</p>
+                <div class="p-3">
+                    <h4 class="font-18 m-b-5 text-center">Bienvenido</h4>
+                    <p class="text-muted text-center">Ingrese sus credenciales</p>
 
-                        <form class="form-horizontal m-t-30" action="index.php" id="formulario_login">
+                    <form class="form-horizontal m-t-30" action="index.php" id="formulario_login">
 
-                            <div class="form-group">
-                                <label for="correo">Correo</label>
-                                <input autocomplete="off" type="text" name="correo" class="form-control" id="correo" placeholder="Ingrese su correo">
-                            </div>
+                        <div class="form-group">
+                            <label for="correo">Correo</label>
+                            <input autocomplete="off" type="text" name="correo" class="form-control" id="correo" placeholder="Ingrese su correo">
+                        </div>
 
-                            <div class="form-group">
-                                <label for="userpassword">Contraseña</label>
+                        <div class="form-group">
+                            <label for="userpassword">Contraseña</label>
+                            <div class="row">
+                                <div class="col-md-12">
                                 <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Ingrese su contraseña">
+                              
+                                <i id="icon_mostrarcontra" style="position: relative;top:-25px;left:-10px;float:right" class="fa fa-eye waves-effect waves-light"></i>
+                                
+                                
+                                </div>
+                                
                             </div>
+                           
+                        </div>
 
-                            <div class="form-group row m-t-20">
-                                <div class="col-sm-6">
-                                    
-                                </div>
-                                <div class="col-sm-6 text-right">
-                                    <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Ingresar</button>
-                                </div>
-                            </div>
+                        <div class="form-group row m-t-20">
+                            <div class="col-sm-6">
 
-                           <div class="row">
-                               <div class="col-md-7">
-                               <div class="form-group">
-                                <div class="col-12 m-t-20">
-                                    <a href="pages-recoverpw.php" class="text-muted"><i class="mdi mdi-lock"></i> Recuperar contraseña</a>
-                                </div>
                             </div>
-                          
-                               </div>
-                               <div class="col-md-5">
-                               <div class="form-group">
-                                <div class="col-12 m-t-20">
-                                    <a href="#" id="link_registrar" class="text-muted"><i class="mdi mdi-account"></i> Registrarse</a>
-                                </div>
+                            <div class="col-sm-6 text-right">
+                                <button class="btn btn-primary w-md waves-effect waves-light" type="submit">Ingresar</button>
                             </div>
-                               </div>
-                           </div>
-                        </form>
-                    </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="form-group m-t-10 mb-0 row">
+                                    <div class="col-12 m-t-20">
+                                        <a href="recuperar_passsword.php" class="text-muted"><i class="mdi mdi-lock"></i>Recuperar contraseña</a>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="col-md-5">
+                                <div class="form-group m-t-10 mb-0 row">
+                                    <div class="col-12 m-t-20">
+                                        <a href="#" id="link_registrar" class="text-muted"><i class="mdi mdi-account"></i>Registrarse</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
+
             </div>
-
-             
-
         </div>
 
-        <?php include '../../layouts/footerScript.php'; ?>
 
-        <!-- App js -->
-        <script src="../../public/assets/js/app.js"></script>
-        <script src="funciones_ingreso.js" type="text/javascript" charset="utf-8" ></script>
 
-    </body>
+    </div>
+
+    <?php include '../../layouts/footerScript.php'; ?>
+
+    <!-- App js -->
+    <script src="../../public/assets/js/app.js"></script>
+    <script src="funciones_ingreso.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+
 </html>

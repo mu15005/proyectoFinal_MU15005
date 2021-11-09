@@ -28,7 +28,7 @@
                         <p class="text-muted text-center">Hola para desbloquear la pantalla ingresa tu contraseña</p>
 
                         <form class="form-horizontal m-t-30" id="formulario_desbloqueo1" name="formulario_desbloqueo1" >
-                            <input type="hidden" name="accion" value="si_con_contrasena">
+                            <input type="hidden" name="desbloquear" value="si_con_contrasena">
                             <div class="user-thumb text-center m-b-30">
                                 <img src="../../public/assets/images/users/avatar-1.jpg" class="rounded-circle img-thumbnail" alt="thumbnail">
                                 <h6><?php print $_SESSION['nombre'] ?></h6>

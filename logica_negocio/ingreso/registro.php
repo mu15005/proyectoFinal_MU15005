@@ -21,8 +21,8 @@
           <h4 class="font-18 m-b-5 text-center">Bienvenido</h4>
           <p class="text-muted text-center">Ingrese sus credenciales</p>
 
-          <form name="formulario_registro" id="formulario_registro"  >
-          <input type="hidden" name="accion" value="si_registralos">
+          <form name="formulario_registro" id="formulario_registro"  enctype="multipart/form-data">
+          <input type="hidden" name="registro" value="si_registralos">
             <div class="row">
               <div class="col-md-12">
                 <div class="form-group">
@@ -76,7 +76,7 @@
               <div class="col-md-12">
                 <div class="form-group">
                   <label>Foto de Perfil</label>
-                  <input type="file" id="foto" name="foto" class="filestyle" data-buttonname="btn-secondary">
+                  <input type="file" id="foto_perfil" name="foto_perfil" class="filestyle" data-buttonname="btn-secondary">
                 </div>
               </div>
 
